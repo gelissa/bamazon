@@ -6,7 +6,7 @@ You, the user, are a guest who is trying to buy products wholesale from the ware
 The app then increments the amount of items you would like from the amount there are in the warehouse. From there, you can enjoy your Bamazon purchase. 
 
 # Tools
-For this app, I use Node.js, inquiry npm package, mysql npm package, mySQL databases. The project is deployed on GitHub. 
+For this app, I use Node.js, inquiry npm package, mysql npm package, and a mySQL database. The project is deployed on GitHub. 
 
 # Links
 

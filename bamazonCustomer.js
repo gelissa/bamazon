@@ -20,6 +20,8 @@ connection.connect(function (err) {
     loadProducts();
 });
 
+
+
 function loadProducts() {
     connection.query("SELECT * FROM products", function (err, res) {
         // throw error if there's a problem
@@ -83,6 +85,7 @@ function purchaseItem(a) {
                         if (err) throw err;
                         console.table(res);
                          let newQuantity = res[0].stock_quantity - answers.amount;
+                         if (res[0].stock_quantity >= answers.amount){
                         connection.query("UPDATE products SET ? WHERE ?",
                         [
                             {
@@ -94,9 +97,13 @@ function purchaseItem(a) {
                             function (err) {
                                 if (err) throw err;
                                 // then...
-                                console.log(a + " products purchased!");
+                                console.log("Your purchase is: $" + newQuantity * a + "\n");
+                                console.log(a + " products purchased! \n");
                                 loadProducts();
-                        });
+                        })} else {
+                            console.log("Unable to get that quantity. Please wait for our next shipment!");
+                            loadProducts();
+                        };
                     });
                
                 
