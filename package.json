@@ -1,0 +1,25 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "an amazon-inspired cli",
+  "main": "bamazon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gelissa/bamazon.git"
+  },
+  "author": "gelissaleveille",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gelissa/bamazon/issues"
+  },
+  "homepage": "https://github.com/gelissa/bamazon#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cli-table": "^0.3.1",
+    "inquirer": "^7.0.0",
+    "mysql": "^2.17.1"
+  }
+}
