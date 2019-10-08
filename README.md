@@ -12,7 +12,7 @@ For this app, I use Node.js, inquiry npm package, mysql npm package, and a mySQL
 
 * [My Portfolio](https://gelissa.github.io/gelissaPortfolio/)
 * [My GitHub Repo](https://github.com/gelissa/bamazon)
-* [Video]() Process for Bamazon
+* [Video](https://drive.google.com/file/d/1b8umEeYwnllix1mVa4vui7ZxiYKuSpJp/view?usp=sharing) Process for Bamazon
 
 #
 Thanks for shopping with Bamazon!
