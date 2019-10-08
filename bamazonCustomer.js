@@ -54,9 +54,9 @@ function promptUserID() {
                         if (err) throw err;
                         console.table(res);
                         purchaseItem(answers.itemID);
-                    });
+                    })
             } else {
-                console.log("Sorry that item is unavailable. \n");
+                console.log("Sorry that item is unavailable. Search again \n");
                 loadProducts();
             }
         });
@@ -97,8 +97,8 @@ function purchaseItem(a) {
                             function (err) {
                                 if (err) throw err;
                                 // then...
-                                console.log("Your purchase is: $" + newQuantity * a + "\n");
-                                console.log(a + " products purchased! \n");
+                                console.log("Your purchase is: $" + res[0].price * answers.amount + "\n");
+                                console.log(answers.amount + " products purchased! \n");
                                 loadProducts();
                         })} else {
                             console.log("Unable to get that quantity. Please wait for our next shipment!");

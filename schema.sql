@@ -13,15 +13,3 @@ CREATE TABLE products (
     PRIMARY KEY (id)
 );
 
-INSERT INTO products(product_name, dept_name, price, stock_quantity)
-
--- insert 8 more, end with a semicolon
-VALUES  ("Corvette", "vehicle", 50000.89, 5), ("Honda", "vehicle", 2000.14, 12), 
-("WaterPik Shower Head", "Home", 20.50, 200),
-("iPhone 11", "Electronics", 1200.14, 300),
-("Smart TV", "Electronics", 4000, 500),
-("Coffee Table", "Home", 200.12, 1000),
-("Frigidaire", "Home", 2500, 10000),
-("Frigidaire", "Home", 2500, 10000),
-("Frigidaire", "Home", 2500, 10000),
-("Frigidaire", "Home", 2500, 10000)
